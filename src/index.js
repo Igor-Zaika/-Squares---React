@@ -5,10 +5,15 @@ import App from './app/app';
 
 import './index.scss';
 
+const initialWidth = 4;
+const initialHeight = 4;
+const cellSize = 50;
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App initialWidth={initialWidth} initialHeight={initialHeight} cellSize={cellSize}/>
   </React.StrictMode>
 );
 
